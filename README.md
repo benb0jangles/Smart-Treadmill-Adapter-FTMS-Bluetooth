@@ -6,10 +6,15 @@ Transform any manual treadmill into a smart fitness device compatible with Pelot
 
 This is my ghetto treadmill, it cost me maybe £49.95 in the returned item sale. It doesn't do any interactivity with any of the latest fitness apps. It just has stop start button, speed adjustment. It doesn't do any auto speed/incline adjustment during classes like the £3499 Peloton Tread Machines do but I figure i can adjust speed with the button. Perhaps I will work on this feature later on.
 
-I Have an old ipad 6th gen and a free peloton 30-day trial, so what better way to improve my ghetto-tread than to implement some treadmill metrics and send them to the ipad app. I saw online there is an adapter called a 'runn' which attaches to the treadmill and provides app metrics but it costs £77 (+P&P) and that is more than my whole treadmill cost so no thanks.
+I Have an old ipad 6th gen and a free peloton 30-day trial, so what better way to improve my ghetto-tread than to implement some treadmill metrics and send them to the ipad app. I saw online there is an adapter called a 'runn' (https://npe.fit/products/runn) which attaches to the treadmill and provides app metrics but it costs £77 (+P&P) and that is more than my whole sub-£50 treadmill cost so no thanks.
 
 I decided to create my own adapter using parts i already have in a box at home, I think the parts are cheap though, coming in at under £10 for the whole lot on Ali. I designed and 3d printed the case.
 
+Here
+![treadmill_gif1](https://github.com/benb0jangles/Smart-Treadmill-Adapter-FTMS-Bluetooth/blob/main/images/export%20(5).gif)
+
+
+![treadmill_gif2](https://github.com/benb0jangles/Smart-Treadmill-Adapter-FTMS-Bluetooth/blob/main/images/export%20(6).gif)
 
 
 
