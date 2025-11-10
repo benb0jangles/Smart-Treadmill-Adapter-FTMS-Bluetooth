@@ -7,7 +7,9 @@ Transform any manual treadmill into a smart fitness device compatible with Pelot
 
 ![treadmill_image1](https://github.com/benb0jangles/Smart-Treadmill-Adapter-FTMS-Bluetooth/blob/main/images/jk02.jpg)
 
-This is my ghetto treadmill, it cost me maybe £49.95 in the returned item sale. It doesn't do any interactivity with any of the latest fitness apps. It just has stop start button, speed adjustment. It doesn't do any auto speed/incline adjustment during classes like the £3499 Peloton Tread Machines (https://www.onepeloton.com/en-GB/shop/tread) do but I figure i can adjust speed with the button. Perhaps I will work on this feature later on.
+This is my ghetto treadmill, it cost me maybe £49.95 in the returned item sale. It doesn't do any interactivity with any of the latest fitness apps. It just has stop start button, speed adjustment. It doesn't do any auto speed/incline adjustment during classes like the £3499 Peloton Tread Machines (https://www.onepeloton.com/en-GB/shop/tread) do but I figure i can adjust speed with the button. Perhaps I will work on this feature later on. For heartrate monitoring I use a cheap £10 bluetooth heart monitor chest strap from ebay/ali.
+
+![treadmill_image3](https://github.com/benb0jangles/Smart-Treadmill-Adapter-FTMS-Bluetooth/blob/main/images/1%20(Small).jpg)
 
 I Have an old ipad 6th gen and a free peloton 30-day trial, so what better way to improve my ghetto-tread than to implement some treadmill metrics and send them to the ipad app. I saw online there is an adapter called a 'runn' (https://npe.fit/products/runn) which attaches to the treadmill and provides app metrics but it costs £77 (+P&P) and that is more than my whole sub-£50 treadmill cost so no thanks.
 
