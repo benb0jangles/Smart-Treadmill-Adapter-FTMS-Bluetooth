@@ -43,7 +43,7 @@ Here is a gif of how the wireless sensor functions. there is a small piece of al
 
 ### Components
 
-- **Microcontrller** (any variant with BLE support)
+- **Microcontroller** (any variant with BLE support)
 - **IR Module Sensor**
 - **Small Piece of Aluminum Tape** (to attach to treadmill belt or roller)
 - **OLED Display** (128x64, I2C interface)
