@@ -1,9 +1,6 @@
-# Smart-Treadmill-Adapter-FTMS-Bluetooth
-A Smart Treadmill Adapter using FTMS Bluetooth to connect to Peloton Strava Zwift KinoMap etc
+# Smart Treadmill - FTMS Bridge
 
-# Smart Treadmill - ESP32 FTMS Bridge
-
-Transform any manual treadmill into a smart fitness device compatible with Peloton, Zwift, and other fitness apps using an ESP32 microcontroller and a simple hall effect sensor.
+Transform any manual treadmill into a smart fitness device compatible with Peloton, Zwift, Strava, Kinomap and other fitness apps using a microcontroller and a simple hall effect sensor.
 
 ## Features
 
@@ -18,32 +15,14 @@ Transform any manual treadmill into a smart fitness device compatible with Pelot
 
 ## Hardware Requirements
 
-### Required Components
+### Components
 
-- **ESP32 Development Board** (any variant with BLE support)
-- **Hall Effect Sensor** (e.g., A3144, KY-003)
-- **Small Magnet** (to attach to treadmill belt or roller)
-- **SSD1306 OLED Display** (128x64, I2C interface)
-- **Jumper Wires**
-- **USB Cable** (for programming and power)
-
-### Optional Components
-
-- **Power Bank** or **5V Power Supply** (for standalone operation)
-- **Case/Enclosure** (to protect the ESP32 and display)
-
-## Wiring Diagram
-
-```
-ESP32        →  Component
-────────────────────────────
-GPIO 4       →  Hall Effect Sensor (Signal)
-GPIO 8       →  OLED SDA
-GPIO 9       →  OLED SCL
-GND          →  All component grounds
-3.3V         →  Hall Effect Sensor VCC
-3.3V         →  OLED VCC
-```
+- **Microcontrller** (any variant with BLE support)
+- **IR Module Sensor**
+- **Small Piece of Aluminum Tape** (to attach to treadmill belt or roller)
+- **OLED Display** (128x64, I2C interface)
+- **4.2v Lipo Battery** or **5V USB Power Supply**
+- **Case/Enclosure** (to protect the System)
 
 ## Software Requirements
 
@@ -101,16 +80,6 @@ Before uploading, you **must** configure these settings in `smart_treadmill.ino`
 ```
 
 Set this to your treadmill's current incline percentage (e.g., 0.0 for flat, 5.0 for 5% incline).
-
-### 3. Verify Pin Configuration
-
-```cpp
-#define SENSOR_PIN 4    // Hall effect sensor
-#define I2C_SDA 8       // OLED data line
-#define I2C_SCL 9       // OLED clock line
-```
-
-If you use different GPIO pins, update these values.
 
 ## Physical Installation
 
