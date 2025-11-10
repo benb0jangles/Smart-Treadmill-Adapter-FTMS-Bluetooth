@@ -10,8 +10,13 @@ I Have an old ipad 6th gen and a free peloton 30-day trial, so what better way t
 
 I decided to create my own adapter using parts i already have in a box at home, I think the parts are cheap though, coming in at under £10 for the whole lot on Ali. I designed and 3d printed the case.
 
-Here
+
+Here is a gif of the peloton app on ios/ipad and the metrics data is displayed at the lower half of the screen. Interestingly, the peloton app does not display metric data if in landscape mode which is unfortunate as most people balance their tablets in that orientation, perhaps it is peloton's cheeky dig at you to buy a whole peloton tread yo.
+
 ![treadmill_gif1](https://github.com/benb0jangles/Smart-Treadmill-Adapter-FTMS-Bluetooth/blob/main/images/export%20(5).gif)
+
+
+Here is a gif of how the wireless sensor functions. there is a small piece of aluminium foil tape (or anything moderately reflective for the ir led to bounce off) on the treadmill which registers everytime it passes the sensor, with this it is possible to calculate speed, and from this we can calculate other metrics too with some simple maths. At present, I am using static incline measurement but in future there is no reason why I cannot implement active incline using an imu, it's very simple to do.
 
 
 ![treadmill_gif2](https://github.com/benb0jangles/Smart-Treadmill-Adapter-FTMS-Bluetooth/blob/main/images/export%20(6).gif)
