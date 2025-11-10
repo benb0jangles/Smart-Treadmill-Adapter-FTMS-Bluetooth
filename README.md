@@ -1,3 +1,6 @@
+![treadmill_image2](https://github.com/benb0jangles/Smart-Treadmill-Adapter-FTMS-Bluetooth/blob/main/images/ghetto-tread.jpg)
+
+
 # Smart Treadmill - FTMS Bridge
 
 Transform any manual treadmill into a smart fitness device compatible with Peloton, Zwift, Strava, Kinomap and other fitness apps using a microcontroller and a simple hall effect sensor.
