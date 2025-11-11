@@ -23,13 +23,9 @@ Here is a gif of the peloton app on ios/ipad and the metrics data is displayed a
 
 ![treadmill_gif1](https://github.com/benb0jangles/Smart-Treadmill-Adapter-FTMS-Bluetooth/blob/main/images/export%20(5).gif)
 
-
 Here is a gif of how the wireless sensor functions. there is a small piece of aluminium foil tape (or anything moderately reflective for the ir led to bounce off) on the treadmill which registers everytime it passes the sensor, with this it is possible to calculate speed, and from this we can calculate other metrics too with some simple maths. At present, I am using static incline measurement but in future there is no reason why I cannot implement active incline using an imu, it's very simple to do.
 
-
 ![treadmill_gif2](https://github.com/benb0jangles/Smart-Treadmill-Adapter-FTMS-Bluetooth/blob/main/images/export%20(6).gif)
-
-
 
 ## Features
 
@@ -41,11 +37,20 @@ Here is a gif of how the wireless sensor functions. there is a small piece of al
 - ✅ **Complete Post-Workout Summary** - Charts and graphs for all metrics
 - ✅ **Zwift Compatible** - Works with any FTMS-compatible fitness app
 - ✅ **Standalone Operation** - Works without app connection, displays metrics on OLED
+- ✅ **Battery monitoring** showing remaining charge percentage
+
+### App Compatibility
+Works seamlessly with:
+- Peloton Digital
+- Zwift
+- Kinomap
+- Strava
+- TrainerRoad
+- Any app supporting Fitness Machine Service (FTMS)
 
 ## Hardware Requirements
 
 ### Components
-
 - **Microcontroller** (any variant with BLE support)
 - **IR Module Sensor**
 - **Small Piece of Aluminum Tape** (to attach to treadmill belt or roller)
@@ -53,13 +58,59 @@ Here is a gif of how the wireless sensor functions. there is a small piece of al
 - **4.2v Lipo Battery** or **5V USB Power Supply**
 - **Case/Enclosure** (to protect the System)
 
-## Software Requirements
+### Smart Configuration
+- **Web interface** for easy setup (no code editing required!)
+- Configure belt circumference, incline, device name
+- Set your weight and height for accurate calorie calculations
+- Automatic BMI calculation
+- Settings saved permanently to device memory
 
-### upload the .bin file
+## Software Installation
+### upload the .bin file:
+The easiest way to upload the firmware is using **ESP Web Flasher** (no software installation needed!):
+
+1. **Download** the latest `.bin` file from the releases page
+2. **Connect** your microcontroller to your computer via USB
+3. **Open** [ESP Web Flasher](https://esp.huhn.me/) in Chrome or Edge browser
+4. **Click** "Connect" and select your device's COM port
+5. **Select** the downloaded `.bin` file
+6. **Click** "Program" and wait for completion
+7. **Done!** Your device will restart automatically
+
+> **Alternative:** You can also use [esptool.py](https://github.com/espressif/esptool) or Arduino IDE if you prefer traditional methods.
 
 ### 1. Measure your treadmill belt circumference
 ### 2. Set Your Treadmill Incline
+### 3. attach your shiny tape
 
+### Step 3: Configure via Web Interface
+
+On first boot, the device creates a WiFi Access Point:
+
+1. **Connect** to WiFi network: `Runn-Config`
+2. **Password:** `runn1234`
+3. **Open browser** and navigate to: `http://192.168.4.1`
+4. **Configure settings:**
+   - **Device Name**: Customize Bluetooth name (shows in apps)
+   - **Belt Circumference**: Measure your treadmill belt (in cm)
+   - **Incline**: Set your treadmill's incline percentage
+   - **Weight**: Enter your weight (kg) for accurate calories
+   - **Height**: Enter your height (cm) for BMI calculation
+5. **Save** settings - they're stored permanently!
+
+**OLED Display shows WiFi info on startup:**
+```
+=== READY ===
+
+WiFi: Runn-Config
+Pass: runn1234
+
+IP: 192.168.4.1
+
+BLE: Advertising
+```
+
+---
 
 ### Standalone Mode (No App)
 
@@ -126,16 +177,22 @@ This project implements the Bluetooth **Fitness Machine Service (FTMS)** specifi
 
 - **FTMS Specification:** Based on Bluetooth SIG Fitness Machine Service standard
 
+### Battery Management
+
+The ESP32-C3 XIAO includes built-in LiPo battery charging:
+- Displays battery percentage on OLED (top right)
+- Monitors voltage via ADC
+- Calculates remaining charge (4.2V = 100%, 3.0V = 0%)
+- Updates every 5 seconds
+
 ## Future Enhancements
 
 Potential improvements to add:
 
 - [ ] Auto-detect belt circumference via calibration mode
 - [ ] Motorized incline control via relay
-- [ ] Web interface for configuration
 - [ ] Integration with Home Assistant or other smart home platforms
 - [ ] Data logging to SD card
-- [ ] Battery level monitoring for portable operation
 
 ## Contributing
 
