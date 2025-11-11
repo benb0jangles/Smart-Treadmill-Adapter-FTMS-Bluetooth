@@ -83,7 +83,7 @@ The easiest way to upload the firmware is using **ESP Web Flasher** (no software
 ### 2. Set Your Treadmill Incline
 ### 3. attach your shiny tape
 
-### Step 3: Configure via Web Interface
+### 4. Configure via Web Interface
 
 On first boot, the device creates a WiFi Access Point:
 
