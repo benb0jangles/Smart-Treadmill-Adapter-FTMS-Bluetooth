@@ -29,7 +29,7 @@ Here is a gif of how the wireless sensor functions. there is a small piece of al
 
 ## Features
 
-- ✅ **Real-time Speed & Distance Tracking** using hall effect sensor
+- ✅ **Real-time Speed & Distance Tracking** using ir sensor
 - ✅ **OLED Display** showing live metrics (speed, distance, calories, incline, time)
 - ✅ **Bluetooth Low Energy (BLE)** broadcasting via Fitness Machine Service (FTMS)
 - ✅ **Peloton App Compatible** - Full support for iOS/Android in portrait and landscape modes
@@ -179,7 +179,7 @@ This project implements the Bluetooth **Fitness Machine Service (FTMS)** specifi
 
 ### Battery Management
 
-The ESP32-C3 XIAO includes built-in LiPo battery charging:
+The -C3 XIAO includes built-in LiPo battery charging:
 - Displays battery percentage on OLED (top right)
 - Monitors voltage via ADC
 - Calculates remaining charge (4.2V = 100%, 3.0V = 0%)
