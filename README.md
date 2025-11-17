@@ -193,7 +193,7 @@ This project implements the Bluetooth **Fitness Machine Service (FTMS)** specifi
 
 ### Battery Management
 
-The -C3 XIAO includes built-in LiPo battery charging:
+The device includes built-in LiPo battery charging:
 - Displays battery percentage on OLED (top right)
 - Monitors voltage via ADC
 - Calculates remaining charge (4.2V = 100%, 3.0V = 0%)
@@ -202,8 +202,6 @@ The -C3 XIAO includes built-in LiPo battery charging:
 ## Future Enhancements
 
 Potential improvements to add:
-
-- [ ] Auto-detect belt circumference via calibration mode
 - [ ] Motorized incline control via relay
 - [ ] Integration with Home Assistant or other smart home platforms
 - [ ] Data logging to SD card
