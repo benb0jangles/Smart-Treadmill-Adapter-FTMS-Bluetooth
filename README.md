@@ -23,7 +23,7 @@ Here is a gif of the peloton app on ios/ipad and the metrics data is displayed a
 
 ![treadmill_gif1](https://github.com/benb0jangles/Smart-Treadmill-Adapter-FTMS-Bluetooth/blob/main/images/export%20(5).gif)
 
-Here is a gif of how the wireless sensor functions. there is a small piece of aluminium foil tape (or anything moderately reflective for the ir led to bounce off) on the treadmill which registers everytime it passes the sensor, with this it is possible to calculate speed, and from this we can calculate other metrics too with some simple maths. At present, I am using static incline measurement but in future there is no reason why I cannot implement active incline using an imu, it's very simple to do.
+Here is a gif of how the wireless sensor functions. there is a small piece (or 2) of aluminium foil tape (or anything moderately reflective for the ir led to bounce off) on the treadmill which registers everytime it passes the sensor, with this it is possible to calculate speed, and from this we can calculate other metrics too with some simple maths. The device uses active imu incline calculations updating in real time, so it is possible to adjust your incline and the data will sync with the fitness app (in future i will consider development for fitness app auto incline changes)
 
 ![treadmill_gif2](https://github.com/benb0jangles/Smart-Treadmill-Adapter-FTMS-Bluetooth/blob/main/images/export%20(6).gif)
 
