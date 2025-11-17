@@ -91,8 +91,8 @@ The easiest way to upload the firmware is using **ESP Web Flasher** (no software
 
 > **Alternative:** You can also use [esptool.py](https://github.com/espressif/esptool) or Arduino IDE if you prefer traditional methods.
 
-### 1. Measure your treadmill belt circumference
-### 2. Set Your Treadmill Incline
+### 1. Measure your treadmill belt circumference (or use 2-tape strips for auto measurement)
+### 2. Set Your Treadmill Incline (imu will adjust and display current incline and send data to app)
 ### 3. attach your shiny tape
 
 ### 4. Configure via Web Interface
