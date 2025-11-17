@@ -48,21 +48,33 @@ Works seamlessly with:
 - TrainerRoad
 - Any app supporting Fitness Machine Service (FTMS)
 
+### Real-Time Metrics
+- **Speed & Distance** tracking via IR sensor detecting reflective tape on belt
+- **Automatic Incline** measurement using IMU (optional)
+- **Manual Incline** percentage monitoring
+- **Calories** burned (calculated using your weight)
+- **Elevation gain** based on distance and incline
+- **Elapsed time** tracking
+- **Battery monitoring** showing remaining charge percentage
+
 ## Hardware Requirements
 
 ### Components
 - **Microcontroller** (any variant with BLE support)
 - **IR Module Sensor**
-- **Small Piece of Aluminum Tape** (to attach to treadmill belt or roller)
+- **Small Piece (or 2) of Aluminum Tape** (to attach to treadmill belt or roller)
 - **OLED Display** (128x64, I2C interface)
 - **4.2v Lipo Battery** or **5V USB Power Supply**
 - **Case/Enclosure** (to protect the System)
+- **IMU** - Automatic real-time incline measurement
 
 ### Smart Configuration
 - **Web interface** for easy setup (no code editing required!)
+- **Automatic belt calibration** - measures circumference using 2 reflective tape markers
 - Configure belt circumference, incline, device name
 - Set your weight and height for accurate calorie calculations
 - Automatic BMI calculation
+- One-button IMU zeroing - quick calibration via hardware button
 - Settings saved permanently to device memory
 
 ## Software Installation
@@ -92,8 +104,10 @@ On first boot, the device creates a WiFi Access Point:
 3. **Open browser** and navigate to: `http://192.168.4.1`
 4. **Configure settings:**
    - **Device Name**: Customize Bluetooth name (shows in apps)
-   - **Belt Circumference**: Measure your treadmill belt (in cm)
-   - **Incline**: Set your treadmill's incline percentage
+   - **Belt Circumference**: Enter manually OR use automatic calibration (see below)
+   - **Incline Mode**: Choose "Manual" or "IMU"
+   - **Manual Incline**: Set percentage (when using manual mode)
+   - **Tape Reference Distance**: Distance between calibration tapes (e.g., 50cm)
    - **Weight**: Enter your weight (kg) for accurate calories
    - **Height**: Enter your height (cm) for BMI calculation
 5. **Save** settings - they're stored permanently!
